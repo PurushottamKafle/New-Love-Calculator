@@ -47,6 +47,9 @@ for(int i=0; i<3; i++) {
 			      int loveCalcus2=3;
 			      int loveCalcus4=30;
 			      int total =loveCalcus+loveCalcus1+loveCalcus2+loveCalcus3+loveCalcus4;
+			      int Nottotal =loveCalcus+loveCalcus1+loveCalcus2+loveCalcus4;
+			      int Mtotal =loveCalcus+loveCalcus3+loveCalcus4;
+
 String x="yes";
 String y="no";
 String z="home";
@@ -101,9 +104,15 @@ System.out.println("Your Gender: "+name);
 System.out.println("Do you love your gf: "+test);
 System.out.println("You're now in: "+Wname+" with "+GFname);
 System.out.println("GF's Face Color: "+GCname);
-
+if(Cname.equals(GCname)&&Wname.equals(z)&& test.equals(x)) {
 System.out.println("Your Gir Friend Love you by: "+total+"%");
+}else if(test.equals(x)) {
+	System.out.println("Your Gir Friend Love you by: "+Mtotal+"%");
 
+}else {
+	System.out.println("Your Gir Friend Love you by: "+Nottotal+"%");
+
+}
 //End of Male
 	        }
 
@@ -196,5 +205,4 @@ System.out.println("Your Boy Friend Love you by: "+total+"%");
 	    }
 
 	}
-
 
